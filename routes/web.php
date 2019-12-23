@@ -12,7 +12,8 @@
 */
 
 
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
-Route::resource('/jobs', 'JobsController');
+Route::resource('/jobs', 'JobsController@store');
